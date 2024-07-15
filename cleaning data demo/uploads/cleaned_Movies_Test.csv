@@ -1,0 +1,8 @@
+Film,Genre,Lead Studio,Audience score %,Profitability,Rotten Tomatoes %,Worldwide Gross,Year
+Movie A,Comedy,Studio A,85.0,2.5,90.0,$100M,2020
+Movie B,Drama,Studio B,80.0,3.0,85.0,$200M,2019
+Movie C,Action,London,75.0,2.9,80.0,$150M,2018
+Movie D,Comedy,Studio D,80.0,2.8,95.0,$180M,2017
+Movie E,Drama,Studio E,85.0,3.2,85.0,$210M,2016
+Movie F,Action,London,90.0,2.85,75.0,$190M,2015
+Movie G,Comedy,Studio G,85.0,2.5,90.0,$100M,2020

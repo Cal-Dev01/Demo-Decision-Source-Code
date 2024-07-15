@@ -1,0 +1,22 @@
+# Requirements for Data Decision Making Repository
+
+# Core Libraries
+numpy
+pandas
+
+# Data Visualization Libraries
+matplotlib
+seaborn
+plotly
+
+# Machine Learning Libraries
+scikit-learn
+
+# Statistical Analysis Libraries
+scipy
+
+# Jupyter Notebook
+jupyter
+
+# Additional Libraries (if needed)
+flask

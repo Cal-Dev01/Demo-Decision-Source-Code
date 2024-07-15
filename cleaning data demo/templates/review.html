@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleNumericInput() {
+            const interpolateCheckbox = document.getElementById('interpolate_checkbox');
+            const nanNumericInput = document.getElementById('nan_numeric_input');
+            nanNumericInput.disabled = interpolateCheckbox.checked;
+        }
+    </script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Review Data</h2>
+        <form method="post" action="{{ url_for('clean') }}">
+            <div class="form-group">
+                <label>Remove Duplicates:</label>
+                <input type="checkbox" name="remove_duplicates">
+            </div>
+            <div class="form-group">
+                <label>Replace NaN in numeric columns with:</label>
+                <input type="text" class="form-control" id="nan_numeric_input" name="nan_numeric" placeholder="Enter a number">
+            </div>
+            <div class="form-group">
+                <label>Or use interpolation for numeric columns:</label>
+                <input type="checkbox" id="interpolate_checkbox" name="interpolate_numeric" onclick="toggleNumericInput()">
+            </div>
+            <div class="form-group">
+                <label>Replace NaN in string columns with:</label>
+                <input type="text" class="form-control" name="nan_string" placeholder="Enter a string">
+            </div>
+            <button type="submit" class="btn btn-primary">Clean Data</button>
+        </form>
+        <h3 class="mt-5">Data with Issues</h3>
+        {{ data|safe }}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

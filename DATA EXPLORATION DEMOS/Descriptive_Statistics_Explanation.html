@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Descriptive Statistics Explanation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    .mathjax-wrapper {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Descriptive Statistics Explanation</h1>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Count</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Age:</strong> 6 (There are 6 entries in the <code>Age</code> column)</li>
+        <li><strong>Salary:</strong> 5 (There are 5 non-NaN entries in the <code>Salary</code> column)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Mean (Average)</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Age:</strong> The average of [25, 30, 35, 25, 16, 40]
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Mean} = \frac{25 + 30 + 35 + 25 + 16 + 40}{6} = \frac{171}{6} = 28.5 $$
+          </div>
+        </li>
+        <li><strong>Salary:</strong> The average of [70000, 80000, 120000, 80000, 30000]
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Mean} = \frac{70000 + 80000 + 120000 + 80000 + 30000}{5} = \frac{380000}{5} = 76000 $$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Standard Deviation (std)</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Age:</strong> The measure of the amount of variation or dispersion of the ages.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Standard Deviation} = \sqrt{\frac{(25 - 28.5)^2 + (30 - 28.5)^2 + (35 - 28.5)^2 + (25 - 28.5)^2 + (16 - 28.5)^2 + (40 - 28.5)^2}{6}} \approx 7.82 $$
+          </div>
+        </li>
+        <li><strong>Salary:</strong> The measure of the amount of variation or dispersion of the salaries.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Standard Deviation} = \sqrt{\frac{(70000 - 76000)^2 + (80000 - 76000)^2 + (120000 - 76000)^2 + (80000 - 76000)^2 + (30000 - 76000)^2}{5}} \approx 29856.39 $$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Variance (var)</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Age:</strong> The measure of how much the ages vary.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Variance} = \frac{(25 - 28.5)^2 + (30 - 28.5)^2 + (35 - 28.5)^2 + (25 - 28.5)^2 + (16 - 28.5)^2 + (40 - 28.5)^2}{6} \approx 61.16 $$
+          </div>
+        </li>
+        <li><strong>Salary:</strong> The measure of how much the salaries vary.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Variance} = \frac{(70000 - 76000)^2 + (80000 - 76000)^2 + (120000 - 76000)^2 + (80000 - 76000)^2 + (30000 - 76000)^2}{5} \approx 891333333.33 $$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Mode</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Age:</strong> The most common age.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Mode} = [25] $$
+          </div>
+        </li>
+        <li><strong>Salary:</strong> The most common salary.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Mode} = [80000] $$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Standard Error of Mean (sem)</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Age:</strong> The standard error of the mean for the ages.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{SEM} = \frac{\text{Standard Deviation}}{\sqrt{N}} \approx 3.19 $$
+          </div>
+        </li>
+        <li><strong>Salary:</strong> The standard error of the mean for the salaries.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{SEM} = \frac{\text{Standard Deviation}}{\sqrt{N}} \approx 13355.25 $$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Skewness (skew)</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Age:</strong> The measure of the asymmetry of the age distribution.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Skewness} \approx -0.50 $$
+          </div>
+        </li>
+        <li><strong>Salary:</strong> The measure of the asymmetry of the salary distribution.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Skewness} \approx -0.17 $$
+          </div>
+      </ul>
+    </div>
+  </div>
+
+    <div class="card mb-3">
+    <div class="card-header">
+      <h3>Slicing</h3>
+    </div>
+    <div class="card-body">
+      <p>Slicing refers to extracting a subset of rows and columns from a DataFrame. It can be done using the <code>loc</code> and <code>iloc</code> methods.</p>
+      <ul>
+        <li><strong>Using <code>loc</code>:</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{df.loc[0:2, ['Name', 'Age']]} $$
+          </div>
+          <p>This extracts rows from index 0 to 2 (inclusive) and columns 'Name' and 'Age'.</p>
+        </li>
+        <li><strong>Using <code>iloc</code>:</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{df.iloc[0:3, 0:2]} $$
+          </div>
+          <p>This extracts rows from index 0 to 2 (exclusive) and columns from index 0 to 1 (exclusive).</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Filtering</h3>
+    </div>
+    <div class="card-body">
+      <p>Filtering refers to extracting rows that meet certain conditions. It can be done using boolean indexing.</p>
+      <ul>
+        <li><strong>Example:</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{df[df['Age'] > 30]} $$
+          </div>
+          <p>This extracts rows where the 'Age' column is greater than 30.</p>
+        </li>
+        <li><strong>Multiple Conditions:</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{df[(df['Age'] > 25) & (df['Salary'] > 70000)]} $$
+          </div>
+          <p>This extracts rows where 'Age' is greater than 25 and 'Salary' is greater than 70000.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Group By</h3>
+    </div>
+    <div class="card-body">
+      <p>Group By is used to group data based on one or more columns and perform aggregate functions on the grouped data.</p>
+      <ul>
+        <li><strong>Example:</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{df.groupby('Age').mean()} $$
+          </div>
+          <p>This groups the DataFrame by the 'Age' column and calculates the mean for each group.</p>
+        </li>
+        <li><strong>Multiple Aggregations:</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{df.groupby('Age').agg({'Salary': ['mean', 'max', 'min']})} $$
+          </div>
+          <p>This groups the DataFrame by the 'Age' column and calculates the mean, max, and min for the 'Salary' column for each group.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Step-by-Step Skewness Calculation for Age</h3>
+    </div>
+    <div class="card-body">
+      <p>The skewness of a dataset can be calculated using the formula for skewness, which measures the asymmetry of the data distribution. The formula for skewness (sample skewness) is:</p>
+      <div class="mt-2 mathjax-wrapper">
+        $$ \text{Skewness} = \frac{n}{(n-1)(n-2)} \sum \left( \frac{(X_i - \bar{X})^3}{s^3} \right) $$
+      </div>
+      <p>Where:</p>
+      <ul>
+        <li> \( n \) is the number of observations</li>
+        <li> \( X_i \) is each individual observation</li>
+        <li> \( \bar{X} \) is the mean of the observations</li>
+        <li> \( s \) is the standard deviation of the observations</li>
+      </ul>
+      <p>For the given <code>Age</code> data \([25, 30, 35, 25, 16, 40]\), let's calculate the skewness step-by-step:</p>
+
+      <h4>Step-by-Step Calculation</h4>
+      <ol>
+        <li>
+          <strong>Calculate the Mean (\( \bar{X} \)):</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \bar{X} = \frac{25 + 30 + 35 + 25 + 16 + 40}{6} = \frac{171}{6} = 28.5 $$
+          </div>
+        </li>
+        <li>
+          <strong>Calculate the Standard Deviation (s):</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ s = \sqrt{\frac{(25 - 28.5)^2 + (30 - 28.5)^2 + (35 - 28.5)^2 + (25 - 28.5)^2 + (16 - 28.5)^2 + (40 - 28.5)^2}{6 - 1}} = \sqrt{\frac{(25 - 28.5)^2 + (30 - 28.5)^2 + (35 - 28.5)^2 + (25 - 28.5)^2 + (16 - 28.5)^2 + (40 - 28.5)^2}{5}} \approx 7.82 $$
+          </div>
+        </li>
+        <li>
+          <strong>Calculate the Skewness:</strong>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Skewness} = \frac{6}{(6-1)(6-2)} \sum \left( \frac{(X_i - 28.5)^3}{(7.82)^3} \right) $$
+          </div>
+          <p>Breaking down the individual terms:</p>
+          <ul>
+            <li>
+              For \( X_1 = 25 \):
+              <div class="mt-2 mathjax-wrapper">
+                $$ \left( \frac{25 - 28.5}{7.82} \right)^3 = \left( \frac{-3.5}{7.82} \right)^3 = (-0.4475)^3 = -0.0897 $$
+              </div>
+            </li>
+            <li>
+              For \( X_2 = 30 \):
+              <div class="mt-2 mathjax-wrapper">
+                $$ \left( \frac{30 - 28.5}{7.82} \right)^3 = \left( \frac{1.5}{7.82} \right)^3 = (0.1918)^3 = 0.0071 $$
+              </div>
+            </li>
+            <li>
+              For \( X_3 = 35 \):
+              <div class="mt-2 mathjax-wrapper">
+                $$ \left( \frac{35 - 28.5}{7.82} \right)^3 = \left( \frac{6.5}{7.82} \right)^3 = (0.8310)^3 = 0.5748 $$
+              </div>
+            </li>
+            <li>
+              For \( X_4 = 25 \):
+              <div class="mt-2 mathjax-wrapper">
+                $$ \left( \frac{25 - 28.5}{7.82} \right)^3 = \left( \frac{-3.5}{7.82} \right)^3 = (-0.4475)^3 = -0.0897 $$
+              </div>
+            </li>
+            <li>
+              For \( X_5 = 16 \):
+              <div class="mt-2 mathjax-wrapper">
+                $$ \left( \frac{16 - 28.5}{7.82} \right)^3 = \left( \frac{-12.5}{7.82} \right)^3 = (-1.5985)^3 = -4.0830 $$
+              </div>
+            </li>
+            <li>
+              For \( X_6 = 40 \):
+              <div class="mt-2 mathjax-wrapper">
+                $$ \left( \frac{40 - 28.5}{7.82} \right)^3 = \left( \frac{11.5}{7.82} \right)^3 = (1.4716)^3 = 3.1832 $$
+              </div>
+            </li>
+          </ul>
+          <p>Summing these values:</p>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \sum \left( \frac{(X_i - 28.5)^3}{(7.82)^3} \right) = -0.0897 + 0.0071 + 0.5748 -0.0897 -4.0830 + 3.1832 = -0.4973 $$
+          </div>
+          <p>So, the skewness is:</p>
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Skewness} = \frac{6}{5 \cdot 4} \cdot -0.4973 = -0.1492 $$
+          </div>
+          <p>The calculated skewness for the <code>Age</code> data is approximately -0.1492, indicating a slight left-skewed distribution.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Random Sample (sample)</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Example:</strong> Returns a random sample of 2 rows from the DataFrame.
+          <div class="mt-2">
+            $$ \text{Random Sample} = \text{df.sample(2)} $$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-header">
+      <h3>Drop NA (dropna)</h3>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li><strong>Example:</strong> Drops all rows with any NaN values.
+          <div class="mt-2">
+            $$ \text{df.dropna()} $$
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+ <div class="card mb-3">
+    <div class="card-header">
+      <h3>Density and Sparsity</h3>
+    </div>
+    <div class="card-body">
+      <p>Density and sparsity are metrics used to describe the completeness of a dataset, specifically the presence or absence of missing values.</p>
+      <ul>
+        <li><strong>Sparsity:</strong> The percentage of missing values in the dataset.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Sparsity} = \left( \frac{\text{Total Missing Values}}{\text{Total Values}} \right) \times 100 $$
+          </div>
+          <p>For example, if there are 3 missing values out of 76 total values, the sparsity is calculated as:
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Sparsity} = \left( \frac{3}{76} \right) \times 100 \approx 3.95\% $$
+          </div></p>
+        </li>
+        <li><strong>Density:</strong> The percentage of non-missing values in the dataset.
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Density} = \left( \frac{\text{Total Non-Missing Values}}{\text{Total Values}} \right) \times 100 $$
+          </div>
+          <p>For example, if there are 73 non-missing values out of 76 total values, the density is calculated as:
+          <div class="mt-2 mathjax-wrapper">
+            $$ \text{Density} = \left( \frac{73}{76} \right) \times 100 \approx 96.05\% $$
+          </div></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="text-center mt-5">
+    <p>&copy; Compiled with ❤️ by Caleb Eghan</p>
+    <p><a href="mailto:caleb.eghan@law.ac.uk">caleb.eghan@law.ac.uk</a></p>
+  </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
